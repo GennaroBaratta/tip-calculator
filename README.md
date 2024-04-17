@@ -27,14 +27,15 @@ Users should be able to:
 - See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
-
+#### Desktop
 ![](./screenshot.png)
+#### Mobile
+![](./screenshot-mobile.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://single-priced-grid-component.vercel.app/)
+- Live Site URL: [vercel](https://single-priced-grid-component.vercel.app/)
 
 ## My process
 
