@@ -122,7 +122,7 @@ export default function Home() {
               </div>
               <div className="text-3xl font-bold text-cyan ">
                 ${!!numberOfPeople && numberOfPeople > 0 ?
-                  (billAmount / numberOfPeople).toFixed(2) :
+                  (billAmount / numberOfPeople + (billAmount * tipPercentage * 0.01 / numberOfPeople)).toFixed(2) :
                   0}</div>
             </div>
           </div>
