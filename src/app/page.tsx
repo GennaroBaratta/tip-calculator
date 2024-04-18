@@ -72,7 +72,7 @@ export default function Home() {
 
           <div className="mb-8 sm:order-1">
             <label htmlFor="numberOfPeople" className="block text-sm font-bold">Number of People
-              {numberOfPeople === 0 && <span className="text-red-500 text-xs font-bold float-end">Can't be zero</span>}
+              {numberOfPeople === 0 && <span className="text-red-500 text-xs font-bold float-end">Can&apos;t be zero</span>}
             </label>
             <Input type="number" id="numberOfPeople"
               className={`
