@@ -39,11 +39,12 @@
 
     --radius: 0.5rem;
 
-    --cyan: 179, 62%, 43%;
-    --cyan-light: 179, 62%, 48%;
-    --bright-yellow: 71, 73%, 54%;
-    --light-gray: 204, 43%, 93%;
-    --grayish-blue: 218, 22%, 67%;
+    --cyan: 172, 67%, 45%;
+    --very-dark-cyan: 183, 100%, 15%;
+    --dark-grayish-cyan: 186, 14%, 43%;
+    --grayish-cyan: 184, 14%, 56%;
+    --light-grayish-cyan: 185, 41%, 84%;
+    --very-light-grayish-cyan: 189, 41%, 97%;
   }
 
   .dark {
@@ -79,11 +80,12 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
 
-    --cyan: 179, 62%, 43%;
-    --cyan-light: 179, 62%, 48%;
-    --bright-yellow: 71, 73%, 54%;
-    --light-gray: 204, 43%, 93%;
-    --grayish-blue: 218, 22%, 67%;
+    --cyan: 172, 67%, 45%;
+    --very-dark-cyan: 183, 100%, 15%;
+    --dark-grayish-cyan: 186, 14%, 43%;
+    --grayish-cyan: 184, 14%, 56%;
+    --light-grayish-cyan: 185, 41%, 84%;
+    --very-light-grayish-cyan: 189, 41%, 97%;
   }
 }
 @layer base {
@@ -91,22 +93,40 @@
     @apply border-border;
   }
 
-  /* body {
-    @apply bg-background text-foreground bg-gradient-to-b from-background-start-rgb to-background-end-rgb;
-  } */
+  body {
+    @apply bg-light-grayish-cyan text-dark-grayish-cyan;
+  }
+
+  
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+} */
+
+#billAmount{
+  padding-left: 1rem;
+  background: url("/images/icon-dollar.svg") no-repeat left, hsl(var(--very-light-grayish-cyan));
+  /* background-size: 0.75rem; */
+  background-position: 1rem;
+}
+
+#numberOfPeople{
+  padding-left: 1rem;
+  background: url("/images/icon-person.svg") no-repeat left, hsl(var(--very-light-grayish-cyan));
+  /* background-size: 0.75rem; */
+  background-position: 1rem;
+
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
 }
 
 

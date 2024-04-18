@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,11 +19,19 @@ const config = {
     },
     extend: {
       colors: {
+        //     --cyan: 172, 67%, 45%;
+        // --very-dark-cyan: 183, 100%, 15%;
+        // --dark-grayish-cyan: 186, 14%, 43%;
+        // --grayish-cyan: 184, 14%, 56%;
+        // --light-grayish-cyan: 185, 41%, 84%;
+        // --very-light-grayish-cyan: 189, 41%, 97%;
         cyan: "hsl(var(--cyan))",
-        cyanLight: "hsl(var(--cyan-light))",
-        brightYellow: "hsl(var(--bright-yellow))",
-        lightGray: "hsl(var(--light-gray))",
-        grayishBlue: "hsl(var(--grayish-blue))",
+        "very-dark-cyan": "hsl(var(--very-dark-cyan))",
+        "dark-grayish-cyan": "hsl(var(--dark-grayish-cyan))",
+        "grayish-cyan": "hsl(var(--grayish-cyan))",
+        "light-grayish-cyan": "hsl(var(--light-grayish-cyan))",
+        "very-light-grayish-cyan": "hsl(var(--very-light-grayish-cyan))",
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
